@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<style>
+         
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ccc;
+        box-sizing: border-box;
+    }
+         
+    button {
+        background-color: green;
+        color: white;
+        padding: 15px 20px;
+        margin: 8px 0;
+        cursor: pointer;
+        width: 100%;
+    }
+         
+    .cancelbtn {
+        padding: 15px 20px;
+        background-color: #FF2E00;
+    }
+        
+    .cancelbtn,
+    .orderbtn {
+        float: left;
+        width: 50%;
+    }
+   
+    .container {
+        padding: 16px;
+    }
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+         
+    @media screen and (max-width: 200px) {
+        .cancelbtn,
+        .orderbtn {
+            width: 100%;
+        }
+    }
+</style>
+ 
+<body bgcolor=”#FFFF00”>
+ 
+    <h2>ORDINA ADESSO!!</h2>
+    
+    <form action="/action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+            <label><b>Nome</b></label>
+            <input type="text" placeholder="Inserisci Nome e Cognome" name="Nome" required>
+ 
+            <label><b>Indirizzo</b></label>
+            <input type="text" placeholder="Inserisci Indirizzo" name="Indirizzo" required>
+ 
+            <label><b>Numero di Telefono</b></label>
+            <input type="text" placeholder="Inserisci un recapito Telefonico" name="Telefono" required>
+            <input type="checkbox"> Aggiungi la salsa ai fagioli di BUD SPENCER<br>
+            <input type="checkbox"> Aggiungi il cartone coibentato all'Asbesto<br>
+            <input type="checkbox" checked="checked"> Aggiungi una mancia per la consegna, non fare il Tanalla!<br>
+            <p>Ricorda che inviando l'ordine stai implicitamente accettando i nostri <a href="#">Termini e Condizioni</a>.</p>
+ 
+            <div class="clearfix">
+                <button type="button" class="cancelbtn">Cancella</button>
+                <button type="submit" class="orderbtn">Invia Ordine</button>
+            </div>
+        </div>
+    </form>
+ 
+</body>
+ 
+</html>
