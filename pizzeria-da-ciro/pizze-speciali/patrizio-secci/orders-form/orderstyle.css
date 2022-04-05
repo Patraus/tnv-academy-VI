@@ -1,7 +1,7 @@
 
          
-    input[type=text],
-    input[type=password] {
+    input[type=text]
+     {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
@@ -24,8 +24,12 @@
         background-color: #FF2E00;
     }
         
-    .cancelbtn,
+    .cancelbtn{
+        float: left;
+        width: 50%;}
+    
     .orderbtn {
+        
         float: left;
         width: 50%;
     }
